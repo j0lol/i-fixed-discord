@@ -2,7 +2,7 @@
 @name         Discord Office Mode
 @namespace    https://github.com/j0lol
 @homepageURL  https://raw.githubusercontent.com/j0lol/i-fixed-discord/
-@version      1.0.0
+@version      1.0.1
 @license      Unlicense
 @description  Gives discord light mode a splash of colour — only works with "Dark sidebar" enabled
 @author       j0lol (https://github.com/j0lol)
@@ -88,7 +88,7 @@ This theme only works on light mode, with dark sidebar enabled.
 	--interactive-hover: #dcddde;
 	--interactive-active: #fff;
 	--interactive-muted: #eee;
-	--background-primary: #36393f;
+	--background-primary: var(--sidebar);
 	--background-secondary: var(--sidebar);
 	--background-secondary-alt: var(--sidebar);
 	--background-tertiary: var(--sidebarDark);
@@ -105,7 +105,7 @@ This theme only works on light mode, with dark sidebar enabled.
 	--background-message-hover: rgba(4,4,5,0.07);
 	--background-help-warning: rgba(250,166,26,0.1);
 	--background-help-info: rgba(0,176,244,0.1);
-	--scrollbar-thin-thumb: #202225;
+	--scrollbar-thin-thumb: rgba(255,255,255,0.3);
 	--scrollbar-thin-track: transparent;
 	--scrollbar-auto-thumb: #202225;
 	--scrollbar-auto-track: #2e3338;
@@ -150,5 +150,17 @@ This theme only works on light mode, with dark sidebar enabled.
 .peopleColumn-29fq28 {
 	background-color: var(--background-primary);
 }
-
+.theme-dark .foreground-26ym5y {
+	fill: #fff;
+}
+.circleIconButton-jET_ig {
+	cursor: pointer;
+	color: #fff;
+}
+.circleIconButton-jET_ig.selected-ugP_am {
+	color: #fff;
+	background-color: var(--background-primary);
+}
+    
+    
 }

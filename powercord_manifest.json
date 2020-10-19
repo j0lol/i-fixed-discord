@@ -1,7 +1,7 @@
 {
     "name": "i fixed discord",
     "description": "use in light mode with dark sidebar enabled.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "jo",
     "license": "The Unlicense",
     "theme": "css/theme.css"
