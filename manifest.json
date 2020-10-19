@@ -1,0 +1,8 @@
+{
+    "name": "theme",
+    "description": "theme",
+    "version": "dont care",
+    "author": "jo",
+    "license": "dont care",
+    "theme": "./css/theme.css"
+}

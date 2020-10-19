@@ -4,5 +4,10 @@
 
 Some variables can be modified within Stylus for customisability. 
 
-- This theme will not work without stylus due to stylus-specific code, but it could be easily edited for pure css, or for discord client modifications.
+Get this theme through Powercord in your client or through Stylus in your browser.
+- Clone this repository into your themes folder to have it working inside [Powercord](https://powercord.dev).
+- Click the Install button on this page to install with Stylus.
+
+Notes:
+- css/theme.css includes no extra stylus-specific code. 
 - This theme will only work in Discord's light theme, with "Dark sidebar" enabled.
