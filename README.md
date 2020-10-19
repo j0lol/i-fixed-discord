@@ -4,5 +4,5 @@
 
 Some variables can be modified within Stylus for customisability. 
 
-- This theme will not work without stylus due to stylus-specific code, but it could be easily edited.
+- This theme will not work without stylus due to stylus-specific code, but it could be easily edited for pure css, or for discord client modifications.
 - This theme will only work in Discord's light theme, with "Dark sidebar" enabled.
