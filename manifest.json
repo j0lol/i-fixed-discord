@@ -1,8 +1,8 @@
 {
-    "name": "theme",
-    "description": "theme",
-    "version": "dont care",
+    "name": "i fixed discord",
+    "description": "use in light mode with dark sidebar enabled.",
+    "version": "1.0.0",
     "author": "jo",
-    "license": "dont care",
+    "license": "The Unlicense",
     "theme": "./css/theme.css"
 }
