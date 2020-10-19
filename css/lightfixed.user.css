@@ -58,7 +58,7 @@ This theme only works on light mode, with dark sidebar enabled.
 	--elevation-low: 0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);
 	--elevation-medium: 0 4px 4px rgba(0,0,0,0.08);
 	--elevation-high: 0 8px 16px rgba(0,0,0,0.16);
-	--logo-primary: sidebar;
+	--logo-primary: var(--sidebar);
 	--focus-primary: #00b0f4;
 	--guild-header-text-shadow: 0 1px 1px hsla(0,0%,100%,0.4);
 	--channeltextarea-background: rgba(0,0,0,0.1);
@@ -89,9 +89,9 @@ This theme only works on light mode, with dark sidebar enabled.
 	--interactive-active: #fff;
 	--interactive-muted: #eee;
 	--background-primary: #36393f;
-	--background-secondary: sidebar;
-	--background-secondary-alt: sidebar;
-	--background-tertiary: sidebarDark;
+	--background-secondary: var(--sidebar);
+	--background-secondary-alt: var(--sidebar);
+	--background-tertiary: var(--sidebarDark);
 	--background-accent: #4f545c;
 	--background-floating: #18191c;
 	--background-mobile-primary: #36393f;
