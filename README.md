@@ -2,6 +2,14 @@
 ![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)
 ![screenshot of discord](https://raw.githubusercontent.com/j0lol/i-fixed-discord/main/screenshots/lightmode.png)
 
+Modifications to discord light mode:
+- Coloured sidebar
+- Darker "light areas" (no PURE white)
+- Small UI tweaks for consistancy with colour/general design
+
+Why?
+- Wanted to make light mode usable
+
 Some variables can be modified within Stylus for customisability. 
 
 Get this theme through Powercord in your client or through Stylus in your browser.
