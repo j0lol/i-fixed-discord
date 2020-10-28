@@ -162,5 +162,9 @@ This theme only works on light mode, with dark sidebar enabled.
 	background-color: var(--background-primary);
 }
     
-    
+/* Fix expanded folders' color */
+.expandedFolderIconWrapper-1xLaU- svg {
+  color: var(--interactive-normal) !important;
+}
+ 
 }
