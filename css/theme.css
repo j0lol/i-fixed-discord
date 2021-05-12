@@ -1,6 +1,11 @@
-:root {
+.oldBrand:root {
 	--sidebar: #7289DA;
 	--sidebarDark: #6479c1;
+}
+
+.newBrand:root {
+	--sidebar: #5865f2;
+	--sidebarDark: #4b58d1;
 }
 
 .theme-light {
@@ -15,9 +20,9 @@
 	--interactive-active: #060607;
 	--interactive-muted: #c7ccd1;
 	--background-primary: #eee;
-    --background-secondary: #e8e8e8;
-    --background-secondary-alt: #d7d7d7;
-    --background-tertiary: #eee;
+	--background-secondary: #e8e8e8;
+	--background-secondary-alt: #d7d7d7;
+	--background-tertiary: #eee;
 	--background-accent: #747f8d;
 	--background-floating: #fff;
 	--background-mobile-primary: #f8f9f9;
@@ -184,4 +189,10 @@
 }
 .topSectionPlaying-1J5E4n .headerFill-adLl4x {
 	background-color: var(--sidebarDark);
+}
+
+/* Selection */
+::selection {
+  background: var(--sidebar);
+  color: #fff !important;
 }
