@@ -7,6 +7,12 @@
 	--sidebar: #5865f2;
 	--sidebarDark: #4b58d1;
 }
+
+::selection {
+  background: var(--sidebar);
+  color: #fff !important;
+}
+
 /*
 
 Attention!
