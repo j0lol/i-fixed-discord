@@ -1,8 +1,12 @@
-:root {
+.oldBrand {
 	--sidebar: #7289DA;
 	--sidebarDark: #6479c1;
 }
 
+.newBrand {
+	--sidebar: #5865f2;
+	--sidebarDark: #4b58d1;
+}
 /*
 
 Attention!
