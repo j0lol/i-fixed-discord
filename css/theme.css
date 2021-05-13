@@ -1,11 +1,12 @@
-.oldBrand {
+
+.oldBrand:root {
 	--sidebar: #7289DA;
 	--sidebarDark: #6479c1;
 }
 
-.newBrand {
-	--sidebar: #5865f2;
-	--sidebarDark: #4b58d1;
+.newBrand:root {
+	--sidebar: var(--brand-experiment);
+	--sidebarDark: var(--brand-experiment-530);
 }
 
 ::selection {
@@ -32,9 +33,9 @@ This theme only works on light mode, with dark sidebar enabled.
 	--interactive-active: #060607;
 	--interactive-muted: #c7ccd1;
 	--background-primary: #eee;
-    --background-secondary: #e8e8e8;
-    --background-secondary-alt: #d7d7d7;
-    --background-tertiary: #eee;
+	--background-secondary: #e8e8e8;
+	--background-secondary-alt: #d7d7d7;
+	--background-tertiary: #eee;
 	--background-accent: #747f8d;
 	--background-floating: #fff;
 	--background-mobile-primary: #f8f9f9;
@@ -75,8 +76,7 @@ This theme only works on light mode, with dark sidebar enabled.
 	--deprecated-text-input-border-disabled: #dcddde;
 	--deprecated-text-input-prefix: #b9bbbe;
 }
-/* Using dark sidebar gives the sidebar the theme-dark colours instead of the theme-light colours
-*/
+
 .theme-dark {
 	--header-primary: #fff;
 	--header-secondary: #eee;
@@ -88,10 +88,10 @@ This theme only works on light mode, with dark sidebar enabled.
 	--interactive-hover: #dcddde;
 	--interactive-active: #fff;
 	--interactive-muted: #eee;
-	--background-primary: var(--sidebar);
-	--background-secondary: var(--sidebar);
-	--background-secondary-alt: var(--sidebar);
-	--background-tertiary: var(--sidebarDark);
+	--background-primary: #36393f;
+	--background-secondary: #2f3136;
+	--background-secondary-alt: #292b2f;
+	--background-tertiary: #202225;
 	--background-accent: #4f545c;
 	--background-floating: #18191c;
 	--background-mobile-primary: #36393f;
@@ -133,6 +133,19 @@ This theme only works on light mode, with dark sidebar enabled.
 	--deprecated-text-input-prefix: #dcddde;
 }
 
+/* Target the areas */
+.sidebar-2K8pFh, /* main area sidebar */
+.guilds-1SWlCJ, /* guild list */
+.sidebarRegion-VFTUkN, /* user/server/channel settings sidebar */
+.titleBar-AC4pGV, /* that bar at top linux users don't have */
+.topSectionPlaying-1J5E4n, /* playing a game, user popout */
+.headerPlaying-j0WQBV /* playing a game, user profile */ {
+	--background-primary: var(--sidebar);
+	--background-secondary: var(--sidebar);
+	--background-secondary-alt: var(--sidebar);
+	--background-tertiary: var(--sidebarDark);
+}
+
 /* Make emoji selection brighter */
 .contents-18-Yxp {
 	filter: brightness(119%) !important;
@@ -160,4 +173,39 @@ This theme only works on light mode, with dark sidebar enabled.
 .circleIconButton-jET_ig.selected-ugP_am {
 	color: #fff;
 	background-color: var(--background-primary);
+}
+
+/* fix win titlebar bar */
+.titleBar-AC4pGV {
+	margin-top: 0;
+	padding-top: 4px;
+	background-color: var(--sidebar);
+}
+
+/* user popout modal */
+.headerPlaying-j0WQBV {
+	background-color: transparent;
+}
+.headerPlaying-j0WQBV .headerTop-3C2Zn0 {
+	background-color: var(--sidebar);
+}
+.headerPlaying-j0WQBV .activity-11LB_k {
+	background-color: var(--sidebarDark);
+}
+
+/* user profile modal */
+.topSectionPlaying-1J5E4n {
+	background-color: transparent;
+}
+.topSectionPlaying-1J5E4n .header-QKLPzZ {
+	background-color: var(--sidebar);
+}
+.topSectionPlaying-1J5E4n .headerFill-adLl4x {
+	background-color: var(--sidebarDark);
+}
+
+/* Selection */
+::selection {
+  background: var(--sidebar);
+  color: #fff !important;
 }
