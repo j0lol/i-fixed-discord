@@ -1,12 +1,25 @@
+
 .oldBrand:root {
 	--sidebar: #7289DA;
 	--sidebarDark: #6479c1;
 }
 
 .newBrand:root {
-	--sidebar: #5865f2;
-	--sidebarDark: #4b58d1;
+	--sidebar: var(--brand-experiment);
+	--sidebarDark: var(--brand-experiment-530);
 }
+
+::selection {
+  background: var(--sidebar);
+  color: #fff !important;
+}
+
+/*
+
+Attention!
+This theme only works on light mode, with dark sidebar enabled.
+
+*/
 
 .theme-light {
 	--header-primary: #060607;
